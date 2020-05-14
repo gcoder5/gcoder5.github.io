@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-14T11:47:38.000Z</updated>
+  <updated>2020-05-14T15:48:29.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,24 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2020/05/14/hello-world/"/>
-    <id>http://yoursite.com/2020/05/14/hello-world/</id>
-    <published>2020-05-14T11:47:38.000Z</published>
-    <updated>2020-05-14T11:47:38.000Z</updated>
+    <title>蓄谋已久的自我介绍</title>
+    <link href="http://yoursite.com/2020/05/14/%E8%93%84%E8%B0%8B%E5%B7%B2%E4%B9%85%E7%9A%84%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D/"/>
+    <id>http://yoursite.com/2020/05/14/%E8%93%84%E8%B0%8B%E5%B7%B2%E4%B9%85%E7%9A%84%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D/</id>
+    <published>2020-05-14T13:44:37.000Z</published>
+    <updated>2020-05-14T15:48:29.000Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>hello，everyone!</p><p>我是GCoder（小声哔哔:听说博主都需要有个笔名），可以是G-Coder，也可以是GC-oder，这些都无伤大雅。我只是一个名不见经传的Java小码农，码龄估摸着得有两年了，初入博场，希望各位看官们多多关照。</p><h4 id="前世今生"><a href="#前世今生" class="headerlink" title="前世今生"></a>前世今生</h4><p>以大学毕业后半年为分水岭的话，前世我是一个正儿八经的机械工科生，上到机械设计，下到机械原理，我都是略有耳闻！毕业后，咱也是如同千万学子一般在诚惶诚恐和欣喜若狂之间的找到了自己的第一份工作（售前工程师），就这样干了半年，知道2017年的年前某一天，我突然细品了我的生活模式–枯燥，无味，过于安逸。我反复推敲，认真问了自己一个问题“这是我喜欢这份工作吗？”，毕竟工作是之后很长一段时间都跟自己的生活息息相关的，我真的愿意一直干这样的工作吗。我迟疑了，先后跟各位长辈们聊了自己的想法，在2017年春节后，我毅然决然的离职。选择了自己感兴趣的编程，毕竟兴趣是最好的老师啊，也是生活最佳的调味剂。而今生的故事是从半年的培训讲起，一路的磕磕碰碰，虽然无情，但也不觉得累，更多的是一种满足，那种发自内心的对感兴趣的东西，追求过程中的起起伏伏的一种刺激，一种勉励，一种全新的生活。</p><h4 id="博客内容"><a href="#博客内容" class="headerlink" title="博客内容"></a>博客内容</h4><p>作为一名程序员，我知道那种对技术渴求的感觉，也明白心态对生活的重要性。讲真的，我已经蓄谋已久想作为一名新时代的程序员来发发言，聊聊技术，吹吹水，跟大伙交流一下。所以，在我的博客里，我大致讲内容分成三块。</p><h5 id="技术文章（70-）"><a href="#技术文章（70-）" class="headerlink" title="技术文章（70%）"></a>技术文章（70%）</h5><p>技术文章是基础课程，发文有这么几个目的：</p><ul><li>记录学习的内容，做好笔记。因为我一直相信温故而知新，可以为师！</li><li>与看官们交流下技术，提升自己的认知。因为我知道三人行，必有我师！</li><li>从小白而来，为小白而去。我希望我的小白笔记可以帮助更多的IT萌新！</li></ul><h5 id="杂谈（20-）"><a href="#杂谈（20-）" class="headerlink" title="杂谈（20%）"></a>杂谈（20%）</h5><p>为什么要有杂谈，到底多杂，想怎么谈？生活有百态，每一态都有它独特的韵味，我们在追求技术的同时，不妨听听其他生活的声音，充实而又丰富的生活节奏，岂不快哉。</p><ul><li>杂谈范围极广，GCoder有什么心得啊，想法啊，都会写上来（其中不乏心灵鸡汤哈哈哈）</li><li>分享趣事，包括GCoder自己的一些兴趣啊（跑马，球类，极限运动，书籍等等）</li></ul><h5 id="水文（10-）"><a href="#水文（10-）" class="headerlink" title="水文（10%）"></a>水文（10%）</h5><p>人跟人之间最重要的理解，而理解的基础是沟通，水文之所以能水，就是因为能说！为什么能说，就是在自己没技术文，没杂谈的情况下，不知道发什么，却又非得想发，大抵就是这样的文章！毫无实质内容，但是却想说说话！哈哈哈</p><h4 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h4><p>GCoder是一个G姓Coder的小星球。</p><p>GCoder又可以是GC和oder，垃圾回收订单。把我们的学习心得理解看成是一个个的“垃圾”，当每一个“垃圾”作为订单被各位看官们不断的消费的时候，“垃圾”会在交流中得到废品回收的效果，重新塑造一个全新的自己，这是初衷，也是博客存在的一点微薄作用。</p><p>我是GCoder，一名热爱技术的Java程序员，一名半吊子跑马选手，如果你爱技术，你爱生活，欢迎你们的关注，兴许我们是志同道合的“狐朋狗友”。岁月漫长，承蒙关照！</p><p><strong>In a lifetime ,happy to meet you.thanks.</strong></p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+        &lt;p&gt;hello，everyone!&lt;/p&gt;
+&lt;p&gt;我是GCoder（小声哔哔:听说博主都需要有个笔名），可以是G-Coder，也可以是GC-oder，这些都无伤大雅。我只是一个名不见经传的Java小码农，码龄估摸着得有两年了，初入博场，希望各位看官们多多关照。&lt;/p&gt;
+&lt;h4 
       
     
     </summary>
     
     
+      <category term="首文" scheme="http://yoursite.com/categories/%E9%A6%96%E6%96%87/"/>
+    
+    
+      <category term="GCoder" scheme="http://yoursite.com/tags/GCoder/"/>
     
   </entry>
   
