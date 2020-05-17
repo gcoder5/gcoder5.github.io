@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-14T21:31:14.000Z</updated>
+  <updated>2020-05-16T12:45:50.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>技术&gt;&gt;Java不得不说的九种数据类型</title>
+    <link href="http://yoursite.com/2020/05/16/%E6%8A%80%E6%9C%AF%3E%3EJava%E4%B8%8D%E5%BE%97%E4%B8%8D%E8%AF%B4%E7%9A%84%E4%B9%9D%E7%A7%8D%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
+    <id>http://yoursite.com/2020/05/16/%E6%8A%80%E6%9C%AF%3E%3EJava%E4%B8%8D%E5%BE%97%E4%B8%8D%E8%AF%B4%E7%9A%84%E4%B9%9D%E7%A7%8D%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/</id>
+    <published>2020-05-16T12:18:55.000Z</published>
+    <updated>2020-05-16T12:45:50.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/categories/Java/"/>
+    
+    
+      <category term="Java" scheme="http://yoursite.com/tags/Java/"/>
+    
+      <category term="数据类型" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>蓄谋已久的自我介绍</title>
