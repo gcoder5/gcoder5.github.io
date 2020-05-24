@@ -6,16 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://gcoder5.com">
-  <title>Archives: 2020 | GCoder-BLOG</title>
+  <title>关于排序算法的那些事儿 | GCoder-BLOG</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="talk is cheap,show me code.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="GCoder-BLOG">
-<meta property="og:url" content="https://gcoder5.com/archives/2020/index.html">
+  <meta name="description" content="Gcoder常常为自己的算法基础薄弱而感到蕉绿。那能怎么办呢？只能够一步步的来把一些基础的算法记录下来，时常温习，让自己能够更深刻的认识它们，如果看官们你也跟我一样蕉绿，那就让我们一起来学习吧～下面我们一起学习下常见的那些个排序算法。 1.选择排序选择排序是一种简单又直观的排序算法，无论是放什么数据都是O(n²)的时间复杂度。所以用它的时候，数据的规模越小越好。 算法思想：维护一个有序的部分，将无">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于排序算法的那些事儿">
+<meta property="og:url" content="https://gcoder5.com/article/503970b4.html">
 <meta property="og:site_name" content="GCoder-BLOG">
-<meta property="og:description" content="talk is cheap,show me code.">
+<meta property="og:description" content="Gcoder常常为自己的算法基础薄弱而感到蕉绿。那能怎么办呢？只能够一步步的来把一些基础的算法记录下来，时常温习，让自己能够更深刻的认识它们，如果看官们你也跟我一样蕉绿，那就让我们一起来学习吧～下面我们一起学习下常见的那些个排序算法。 1.选择排序选择排序是一种简单又直观的排序算法，无论是放什么数据都是O(n²)的时间复杂度。所以用它的时候，数据的规模越小越好。 算法思想：维护一个有序的部分，将无">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-05-24T21:37:07.000Z">
+<meta property="article:modified_time" content="2020-05-24T23:02:36.000Z">
 <meta property="article:author" content="GCoder">
+<meta property="article:tag" content="kotlin">
+<meta property="article:tag" content="排序算法">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="GCoder-BLOG" type="application/atom+xml">
@@ -163,39 +167,122 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-关于排序算法的那些事儿"
+         class="article article-type-post " itemscope
+         itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
   
+    <h1 class="article-title" itemprop="name">
+      关于排序算法的那些事儿
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
+
+                
+                    
+    <!-- 不蒜子统计 -->
+    <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
 <a href="/article/503970b4.html" class="archive-article-date">
     <time datetime="2020-05-24T21:37:07.000Z" itemprop="datePublished"><i
                 class="icon-calendar icon"></i>2020-05-25</time>
 </a>
 
+                
+            </header>
+        
+        <div align="center" class="post-count">
+            字数：686字 | 预计阅读时长：2分钟
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/article/503970b4.html">关于排序算法的那些事儿</a>
-    </h1>
-  
+        <div class="article-entry" itemprop="articleBody">
+            <span class="post-count">
 
-        <div class="article-info info-on-right">
-          
+            </span>
+            
+                <p>Gcoder常常为自己的算法基础薄弱而感到蕉绿。那能怎么办呢？只能够一步步的来把一些基础的算法记录下来，时常温习，让自己能够更深刻的认识它们，如果看官们你也跟我一样蕉绿，那就让我们一起来学习吧～下面我们一起学习下常见的那些个排序算法。</p>
+<h3 id="1-选择排序"><a href="#1-选择排序" class="headerlink" title="1.选择排序"></a>1.选择排序</h3><p>选择排序是一种简单又直观的排序算法，无论是放什么数据都是O(n²)的时间复杂度。所以用它的时候，数据的规模越小越好。</p>
+<p>算法思想：维护一个有序的部分，将无序部分最大的元素和最后一个元素相交换，交换后无序部分的最后一个元素也将有序。</p>
+<p>排序原理：扫描整个序列，然后找出最小的一个元素，跟第一个元素交换，然后从剩下的元素中继续选择这种选择和交换的方式，最终形成一个有序的序列。</p>
+<blockquote>
+<p>以[38,65,98,75,12,25,50]为例：</p>
+<p>第一趟排序:12, [38,65,98,75,25,50]</p>
+<p>第二趟排序:12,25, [38,65,98,75,50]</p>
+<p>第三趟排序:12,25, 38,[65,98,75,50]</p>
+<p>第四趟排序:12,25, 38,50,[65,98,75]</p>
+<p>第五趟排序:12,25, 38,50,65,[98,75]</p>
+<p>第六趟排序:12,25, 38,50,65,75,[98]</p>
+<p>第七趟排序:12,25, 38,50,65,75,98</p>
+</blockquote>
+<a id="more"></a>
+
+<p>程序代码（Java）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">selectSort1</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="comment">//1.定义原始序列</span></span><br><span class="line">        <span class="keyword">int</span>[] numbers = &#123;<span class="number">38</span>, <span class="number">65</span>, <span class="number">98</span>, <span class="number">75</span>, <span class="number">12</span>, <span class="number">25</span>, <span class="number">50</span>&#125;;</span><br><span class="line">        System.out.println(<span class="string">"原始序列 = "</span> + Arrays.toString(numbers));</span><br><span class="line"></span><br><span class="line">        <span class="comment">//2.要经过i-1轮对比</span></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; numbers.length - <span class="number">1</span>; i++) &#123;</span><br><span class="line">            <span class="keyword">int</span> min = i;<span class="comment">//定义最小值的下标</span></span><br><span class="line">            <span class="comment">//3.每一轮需要比较j次</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt; numbers.length; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (numbers[min] &gt; numbers[j]) &#123;</span><br><span class="line">                    min = j;<span class="comment">//更新记录最小值的下标</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">//4.将找到的最小值跟i的值交换</span></span><br><span class="line">            <span class="keyword">if</span> (i != min) &#123;</span><br><span class="line">                <span class="keyword">int</span> tmp = numbers[i];</span><br><span class="line">                numbers[i] = numbers[min];</span><br><span class="line">                numbers[min] = tmp;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">//输出每一轮变换后的序列</span></span><br><span class="line">            System.out.println(<span class="string">"第"</span> + (i + <span class="number">1</span>) + <span class="string">"次排序 = "</span> + Arrays.toString(numbers));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<p>程序代码（kotlin）</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">selectSort1</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="comment">//1.定义原始序列</span></span><br><span class="line">    <span class="keyword">val</span> numbers = intArrayOf(<span class="number">38</span>, <span class="number">65</span>, <span class="number">98</span>, <span class="number">75</span>, <span class="number">12</span>, <span class="number">25</span>, <span class="number">50</span>)</span><br><span class="line">    println(<span class="string">"原始序列 = "</span> + numbers.contentToString())</span><br><span class="line"></span><br><span class="line">    <span class="comment">//2.要经过i-1轮对比</span></span><br><span class="line">    <span class="keyword">for</span> (i <span class="keyword">in</span> <span class="number">0</span> until numbers.size - <span class="number">1</span>) &#123;</span><br><span class="line">        <span class="keyword">var</span> min = i <span class="comment">//定义最小值的下标</span></span><br><span class="line">        <span class="comment">//3.每一轮需要比较j次</span></span><br><span class="line">        <span class="keyword">for</span> (j <span class="keyword">in</span> i + <span class="number">1</span> until numbers.size) &#123;</span><br><span class="line">            <span class="keyword">if</span> (numbers[min] &gt; numbers[j]) &#123;</span><br><span class="line">                min = j <span class="comment">//更新记录最小值的下标</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//4.将找到的最小值跟i的值交换</span></span><br><span class="line">        <span class="keyword">if</span> (i != min) &#123;</span><br><span class="line">            <span class="keyword">val</span> tmp = numbers[i]</span><br><span class="line">            numbers[i] = numbers[min]</span><br><span class="line">            numbers[min] = tmp</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//输出每一轮变换后的序列</span></span><br><span class="line">        println(<span class="string">"第"</span> + (i + <span class="number">1</span>) + <span class="string">"次排序 = "</span> + numbers.contentToString())</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+            
+            <!--添加每篇文章的版本-->
+            
+            
+                <div class="declare">
+                    <strong>本文作者：</strong>
+                    
+                        GCoder
+                    
+                    <br>
+                    <strong>本文链接：</strong>
+                    <a href="https://gcoder5.com/article/503970b4.html">https://gcoder5.com/article/503970b4.html</a>
+                    <br>
+                    <strong>版权声明：</strong>
+                    本作品采用
+                    <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
+                    进行许可。转载请注明出处！
+                    
+                        <br>
+                        <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0"
+                                                                               src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"/></a>
+                    
+                </div>
+            
+            <!--end-->
+            
+                <div class="page-reward">
+                    <a href="javascript:;" class="page-reward-btn tooltip-top">
+                        <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+                            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
+                              class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                      
+                      
+                          <div class="reward-box-item">
+                      <img class="reward-img" src="/img/wechat_pay.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                      
+                  </div>
+                </span>
+              </span>
+            </span>
+                        </div>
+                    </a>
+                </div>
+            
+        </div>
+        <div class="article-info article-info-index">
+            
+            
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -211,7 +298,7 @@
 		</ul>
 	</div>
 
-          
+            
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -224,183 +311,136 @@
 	</div>
 
 
+            
+
+            
+                
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
   </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://gcoder5.com/article/503970b4.html" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+            
+            <div class="clearfix"></div>
+        </div>
+    </div>
 </article>
-  
+
     
+<nav id="article-nav">
+  
+  
+    <a href="/article/583cf726.html" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">那些让人爱恨交加的指令们</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-选择排序"><span class="toc-number">1.</span> <span class="toc-text">1.选择排序</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/article/583cf726.html" class="archive-article-date">
-    <time datetime="2020-05-19T12:08:32.000Z" itemprop="datePublished"><i
-                class="icon-calendar icon"></i>2020-05-19</time>
-</a>
 
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/article/583cf726.html">那些让人爱恨交加的指令们</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">命令</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">maven</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Java//" class="article-tag-list-link color5">Java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
     
+        <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '7826f123379dad47f9cb',
+        clientSecret: 'dc92b04353b50532474b0f31d8de5272b9ec4dfe',
+        repo: 'gcoder5Coments',
+        owner: 'gcoder5',
+        admin: ['gcoder5'],
+        id: decodeURI(location.pathname),
+        distractionFreeMode: 'true'
+    })
+    gitalk.render('gitalk-container')
+</script>
+
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/article/10089.html" class="archive-article-date">
-    <time datetime="2020-05-16T12:18:55.000Z" itemprop="datePublished"><i
-                class="icon-calendar icon"></i>2020-05-16</time>
-</a>
 
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/article/10089.html">Java不得不说的九种基本数据类型</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">Java</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">数据类型</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Java//" class="article-tag-list-link color5">Java</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
     
+
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/article/8964.html" class="archive-article-date">
-    <time datetime="2020-05-14T13:44:37.000Z" itemprop="datePublished"><i
-                class="icon-calendar icon"></i>2020-05-14</time>
-</a>
 
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/article/8964.html">蓄谋已久的自我介绍</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">GCoder</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/首文//" class="article-tag-list-link color3">首文</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+    
 
     
 
@@ -440,8 +480,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

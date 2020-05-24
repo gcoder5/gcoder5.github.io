@@ -63,10 +63,10 @@
             </ul>
         </nav>
         <nav style="color: #696969;font-size: 12px">
-            总文章数 3
+            总文章数 4
         </nav>
         <nav style="color: #696969;font-size: 12px">
-            总字数 <span class="post-count">5.8k</span>
+            总字数 <span class="post-count">7k</span>
         </nav>
         <nav class="header-smart-menu">
             
@@ -275,6 +275,126 @@
 
 
   
+    <article id="post-关于排序算法的那些事儿"
+         class="article article-type-post  article-index" itemscope
+         itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/article/503970b4.html">关于排序算法的那些事儿</a>
+    </h1>
+  
+
+                
+                    
+<a href="/article/503970b4.html" class="archive-article-date">
+    <time datetime="2020-05-24T21:37:07.000Z" itemprop="datePublished"><i
+                class="icon-calendar icon"></i>2020-05-25</time>
+</a>
+
+                
+            </header>
+        
+        <div align="center" class="post-count">
+            字数：686字 | 预计阅读时长：2分钟
+        </div>
+        <div class="article-entry" itemprop="articleBody">
+            <span class="post-count">
+
+            </span>
+            
+                <p>Gcoder常常为自己的算法基础薄弱而感到蕉绿。那能怎么办呢？只能够一步步的来把一些基础的算法记录下来，时常温习，让自己能够更深刻的认识它们，如果看官们你也跟我一样蕉绿，那就让我们一起来学习吧～下面我们一起学习下常见的那些个排序算法。</p>
+<h3 id="1-选择排序"><a href="#1-选择排序" class="headerlink" title="1.选择排序"></a>1.选择排序</h3><p>选择排序是一种简单又直观的排序算法，无论是放什么数据都是O(n²)的时间复杂度。所以用它的时候，数据的规模越小越好。</p>
+<p>算法思想：维护一个有序的部分，将无序部分最大的元素和最后一个元素相交换，交换后无序部分的最后一个元素也将有序。</p>
+<p>排序原理：扫描整个序列，然后找出最小的一个元素，跟第一个元素交换，然后从剩下的元素中继续选择这种选择和交换的方式，最终形成一个有序的序列。</p>
+<blockquote>
+<p>以[38,65,98,75,12,25,50]为例：</p>
+<p>第一趟排序:12, [38,65,98,75,25,50]</p>
+<p>第二趟排序:12,25, [38,65,98,75,50]</p>
+<p>第三趟排序:12,25, 38,[65,98,75,50]</p>
+<p>第四趟排序:12,25, 38,50,[65,98,75]</p>
+<p>第五趟排序:12,25, 38,50,65,[98,75]</p>
+<p>第六趟排序:12,25, 38,50,65,75,[98]</p>
+<p>第七趟排序:12,25, 38,50,65,75,98</p>
+</blockquote>
+                
+                    <a class="article-more-a" href="/article/503970b4.html#more">more >></a>
+                
+            
+            <!--添加每篇文章的版本-->
+            
+            
+                <div class="declare" hidden="hidden"></div>
+            
+            <!--end-->
+            
+        </div>
+        <div class="article-info article-info-index">
+            
+            
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">kotlin</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">排序算法</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+            
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Java//" class="article-tag-list-link color5">Java</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+            
+                <p class="article-more-link">
+                    <a class="article-more-a" href="/article/503970b4.html">展开全文 >></a>
+                </p>
+            
+
+            
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-那些让人爱恨交加的指令们"
          class="article article-type-post  article-index" itemscope
          itemprop="blogPost">
@@ -299,7 +419,7 @@
             </header>
         
         <div align="center" class="post-count">
-            字数：1.7k字 | 预计阅读时长：6分钟
+            字数：2.2k字 | 预计阅读时长：8分钟
         </div>
         <div class="article-entry" itemprop="articleBody">
             <span class="post-count">
@@ -332,6 +452,10 @@
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">git</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">maven</a>
         		</li>
       		
 		</ul>
@@ -640,15 +764,27 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">GCoder</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">命令</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">GCoder</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">kotlin</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">排序算法</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">maven</a>
               </li>
             
             <div class="clearfix"></div>
